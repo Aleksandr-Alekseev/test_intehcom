@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.1.3
+- https://www.phpmyadmin.net
+-
+- Хост: 127.0.0.1:3306
+- Время создания: Янв 24 2023 г., 09:03
+- Версия сервера: 5.7.38-log
+- Версия PHP: 7.2.34
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="sorting" collation="utf8mb4_unicode_ci" charset="utf8mb4">
+            <pma:table name="history">
+                CREATE TABLE `history` (
+                  `id` int(10) NOT NULL AUTO_INCREMENT,
+                  `pocket_number` int(2) NOT NULL,
+                  `length` int(4) NOT NULL,
+                  `diameter` int(3) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+            </pma:table>
+            <pma:table name="sorting_table">
+                CREATE TABLE `sorting_table` (
+                  `id` int(2) NOT NULL,
+                  `min_length` int(4) NOT NULL,
+                  `max_length` int(4) NOT NULL,
+                  `min_diameter` int(3) NOT NULL,
+                  `max_diameter` int(3) NOT NULL
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - База данных: 'sorting'
+    -->
+    <database name="sorting">
+        <!-- Таблица history -->
+        <!-- Таблица sorting_table -->
+        <table name="sorting_table">
+            <column name="id">2</column>
+            <column name="min_length">4000</column>
+            <column name="max_length">4500</column>
+            <column name="min_diameter">140</column>
+            <column name="max_diameter">170</column>
+        </table>
+        <table name="sorting_table">
+            <column name="id">3</column>
+            <column name="min_length">4501</column>
+            <column name="max_length">5000</column>
+            <column name="min_diameter">160</column>
+            <column name="max_diameter">180</column>
+        </table>
+        <table name="sorting_table">
+            <column name="id">4</column>
+            <column name="min_length">4501</column>
+            <column name="max_length">5000</column>
+            <column name="min_diameter">170</column>
+            <column name="max_diameter">200</column>
+        </table>
+        <table name="sorting_table">
+            <column name="id">5</column>
+            <column name="min_length">4501</column>
+            <column name="max_length">5000</column>
+            <column name="min_diameter">190</column>
+            <column name="max_diameter">210</column>
+        </table>
+        <table name="sorting_table">
+            <column name="id">6</column>
+            <column name="min_length">5001</column>
+            <column name="max_length">5500</column>
+            <column name="min_diameter">200</column>
+            <column name="max_diameter">230</column>
+        </table>
+        <table name="sorting_table">
+            <column name="id">7</column>
+            <column name="min_length">5001</column>
+            <column name="max_length">5500</column>
+            <column name="min_diameter">220</column>
+            <column name="max_diameter">240</column>
+        </table>
+        <table name="sorting_table">
+            <column name="id">8</column>
+            <column name="min_length">5001</column>
+            <column name="max_length">5500</column>
+            <column name="min_diameter">230</column>
+            <column name="max_diameter">260</column>
+        </table>
+        <table name="sorting_table">
+            <column name="id">9</column>
+            <column name="min_length">5501</column>
+            <column name="max_length">6000</column>
+            <column name="min_diameter">250</column>
+            <column name="max_diameter">270</column>
+        </table>
+        <table name="sorting_table">
+            <column name="id">10</column>
+            <column name="min_length">5501</column>
+            <column name="max_length">6000</column>
+            <column name="min_diameter">260</column>
+            <column name="max_diameter">290</column>
+        </table>
+        <table name="sorting_table">
+            <column name="id">11</column>
+            <column name="min_length">5501</column>
+            <column name="max_length">6000</column>
+            <column name="min_diameter">280</column>
+            <column name="max_diameter">300</column>
+        </table>
+        <table name="sorting_table">
+            <column name="id">12</column>
+            <column name="min_length">6001</column>
+            <column name="max_length">6500</column>
+            <column name="min_diameter">290</column>
+            <column name="max_diameter">320</column>
+        </table>
+        <table name="sorting_table">
+            <column name="id">13</column>
+            <column name="min_length">6001</column>
+            <column name="max_length">6500</column>
+            <column name="min_diameter">310</column>
+            <column name="max_diameter">330</column>
+        </table>
+        <table name="sorting_table">
+            <column name="id">14</column>
+            <column name="min_length">6001</column>
+            <column name="max_length">6500</column>
+            <column name="min_diameter">320</column>
+            <column name="max_diameter">350</column>
+        </table>
+        <table name="sorting_table">
+            <column name="id">1</column>
+            <column name="min_length">4000</column>
+            <column name="max_length">4500</column>
+            <column name="min_diameter">130</column>
+            <column name="max_diameter">150</column>
+        </table>
+    </database>
+</pma_xml_export>
